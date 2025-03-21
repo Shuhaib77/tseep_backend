@@ -1,4 +1,6 @@
-import Question from "../modals/Quastion.js";
+import Question from "../modals/quastions.js";
+
+
 
 export const addQpoolService = async (question, options, answer) => {
   try {
@@ -10,7 +12,7 @@ export const addQpoolService = async (question, options, answer) => {
       throw new Error("quastion allredy exists");
     }
 
-    const newQuestion = Question({
+    const newQuestion =new Question({
       question,
       answer,
       options,
